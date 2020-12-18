@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@if (ViewBag.Err != null) {
+<script type="text/javascript" charset="utf-8">
+        window.onload = function () {
+        alert("@ViewBag.Err");
+    }
+</script>
+}
+
+@*<div class="breadcrumb">
+    <div class="container">
+        <a class="breadcrumb-item" href="~/Home/Index">Trang chủ</a>
+        <span class="breadcrumb-item active">Đăng nhập</span>
+    </div>
+</div>*@
+<section class="static about-sec">
+    <div class="container">
+        <h1>Tài khoản / Đăng nhập</h1>
+        <p>Đăng nhập để nhận nhiều ưu đãi, nếu chưa có tài khoản hãy đăng kí ngay nào!!!</p>
+        <div class="form">
+            <form method="post" action="~/DangNhap/Index">
+                <div class="row">
+                    <div class="col-md-5">
+                        <input name="username" placeholder="Tên đăng nhập" required>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-md-5">
+                        <input name="password" type="password" placeholder="Mật khẩu" required>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <button type="submit" class="btn black">Đăng nhập</button>
+                        <h5>Chưa đăng kí!!! <a href="~/DangKy/Index">Đăng ký</a></h5>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

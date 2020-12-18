@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "KetQua";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+<div class="breadcrumb">
+    <div class="container">
+        <a class="breadcrumb-item" href="~/Home/Index">Trang chủ</a>
+        <span class="breadcrumb-item active">Sản phẩm</span>
+    </div>
+</div>
+<section class="static about-sec">
+
+    <div class="container">
+
+
+        @{
+            var list = Session["Products"] as List<WebApplication5.Models.Sach>;
+        }
+        <div class="recomended-sec">
+            <div class="row">
+                @{
+                    foreach (var item in list)
+                    {
+                        <div class="col-md-3">
+                            <div class="item">
+                                <img style="width: 170px;height: 210px;display: block;margin-left: auto; margin-right: auto;" src="~/UploadedFiles/@item.AnhBia" alt="img">
+                                <h3><a href="/ChiTietSach/Index/@item.MaSach">@item.TenSach</a></h3>
+                                <h6><span class="price">@item.GiaBan VNĐ</span> / <a href="#">Mua ngay</a></h6>
+                            </div>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

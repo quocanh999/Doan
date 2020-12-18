@@ -1,0 +1,369 @@
+﻿@model WebApplication5.Models.KhachHang
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_LayoutAd.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <link href="~/Content/chude.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @*@using (Html.BeginForm("Add","ChuDe",FormMethod.Post))
+        {*@
+    @{
+        var kh = Session["KH"] as WebApplication5.Models.KhachHang;
+        string dateValue = kh.NgaySinh.Year + "-" + kh.NgaySinh.Month + "-" + kh.NgaySinh.Day;
+        if (kh.NgaySinh.Month < 10 && kh.NgaySinh.Day >= 10)
+        {
+            dateValue = kh.NgaySinh.Year + "-0" + kh.NgaySinh.Month + "-" + kh.NgaySinh.Day;
+
+        }
+        else if (kh.NgaySinh.Day < 10 && kh.NgaySinh.Month >= 10)
+        {
+            dateValue = kh.NgaySinh.Year + "-" + kh.NgaySinh.Month + "-0" + kh.NgaySinh.Day;
+        }
+        else if (kh.NgaySinh.Month < 10 && kh.NgaySinh.Day < 10)
+        {
+            dateValue = kh.NgaySinh.Year + "-0" + kh.NgaySinh.Month + "-0" + kh.NgaySinh.Day;
+        }
+    }
+    <h1 style="font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-decoration: underline;
+    text-align: center">
+        Khách Hàng
+    </h1>
+
+    <div style="width:1100px;height:300px">
+    <form method="post" action="~/KhachHang/Update">
+        <div style="width:650px;height:280px;margin-left:73px;margin-top:10px;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);float:left">
+            <div style="padding-left:10px;padding-top:10px; width:310px;height:280px;float:left;margin:0">
+                <label style="font-weight:bold">Tên khách hàng :</label><br />
+                @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @style = "outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;", @Value = @kh.HoTen, @id = "name", @placeholder = "Nhập tên khách hàng" } })
+                <br />
+                <p style="color:red">@Html.ValidationMessageFor(model => model.HoTen)</p>
+                <label style="font-weight:bold">Ngày sinh :</label><br />
+                @Html.EditorFor(model => model.NgaySinh, new { htmlAttributes = new { @type = "date", @style = "outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;", @Value = dateValue, @id = "day", @placeholder = "Nhập mô tả" } })
+                <p style="color:red">@Html.ValidationMessageFor(model => model.NgaySinh)</p>
+                @*<input type="text" style="outline:none; margin-top:5px;margin-bottom:5px;width:50px;border-radius: 10px;padding:5px;" name="day" id="date"
+                       placeholder="Nhập ngày sinh"
+                       value=@kh.NgaySinh.Day />
+                <input type="text" style="outline:none; margin-top:5px;margin-bottom:5px;width:50px;border-radius: 10px;padding:5px;" name="month" id="date"
+                       placeholder="Nhập tháng sinh"
+                       value=@kh.NgaySinh.Month />
+                <input type="text" style="outline:none; margin-top:5px;margin-bottom:5px;width:50px;border-radius: 10px;padding:5px;" name="year" id="date"
+                       placeholder="Nhập năm sinh"
+                       value=@kh.NgaySinh.Year /><br />*@
+                <label style="font-weight:bold">Tài khoản :</label><br />
+                @Html.EditorFor(model => model.TaiKhoan, new { htmlAttributes = new { @style = "outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;", @readonly = "readonly", @Value = @kh.TaiKhoan, @id = "name", @placeholder = "Nhập tài khoản" } })
+                <br />
+
+            </div>
+            <div style="width:320px;height:280px;float:right;margin:0;padding-top:10px;">
+                @if (@kh.GioiTinh == "Nam")
+                {
+                    <label style="font-weight:bold">Giới tính :</label><br />
+                    @Html.RadioButtonFor(model => model.GioiTinh, "Nam", new { @checked = "checked", @style = "margin-top:5px;margin-bottom:5px" })
+                    <span id="male">
+                        &nbsp; Nam
+                    </span>@:&nbsp; &nbsp;
+                    @Html.RadioButtonFor(model => model.GioiTinh, "Nữ")
+                    <span id="female">
+                        &nbsp; Nữ
+                    </span>@:&nbsp; &nbsp;<br />
+                }
+                else
+                {
+                    <label style="font-weight:bold" l>Giới tính :</label><br />
+                    @Html.RadioButtonFor(model => model.GioiTinh, "Nam")
+                    <span id="male">
+                        &nbsp; Nam
+                    </span>@:&nbsp; &nbsp;
+                    @Html.RadioButtonFor(model => model.GioiTinh, "Nữ", new { @checked = "checked", @style = "margin-top:5px;margin-bottom:5px" })
+                    <span id="female">
+                        &nbsp; Nữ
+                    </span>@:&nbsp; &nbsp;<br />
+                }
+
+
+
+                @if (@kh.LoaiKH == "Admin")
+                {
+                    <label style="font-weight:bold">Loại khách hàng :</label><br />
+                    <select name="loaitaikhoan" style="outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;" id="tacgia">
+
+                        <option value="Admin" selected>Admin</option>
+                        <option value="Nhập Liệu">Nhập liệu</option>
+                        <option value="Khách Hàng">Khách Hàng</option>
+                    </select><br />
+                }
+                else if (@kh.LoaiKH == "Khách Hàng")
+                {
+                    <label style="font-weight:bold">Loại khách hàng :</label><br />
+                    <select name="loaitaikhoan" style="outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;" id="tacgia">
+
+                        <option value="Admin">Admin</option>
+                        <option value="Nhập Liệu" >Nhập liệu</option>
+                        <option value="Khách Hàng" selected>Khách Hàng</option>
+                    </select><br />
+                }else
+                {
+                <label style="font-weight:bold">Loại khách hàng :</label><br />
+                <select name="loaitaikhoan" style="outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;" id="tacgia">
+
+                    <option value="Admin">Admin</option>
+                    <option value="Nhập Liệu" selected>Nhập liệu</option>
+                    <option value="Khách Hàng">Khách Hàng</option>
+                </select><br />
+                }
+
+                <input type="submit" value="Cập nhật"
+                       style="padding: 5px;
+width:150px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+                <input type="button"
+                       value="Reset mật khẩu"
+                       onclick="location.href='@Url.Action("Reset", "KhachHang")'"
+                       style="padding: 5px;
+width:150px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+            </div>
+            </div>
+</form>
+
+
+    <div style="padding-left:10px;padding-top:10px; width:330px;height:270px;margin-top:10px;float:right;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+        <form method="post" action="/KhachHang/TimKiem">
+            <label style="font-weight:bold">Tên khách hàng :</label><br />
+            <input type="text" name="name" style="outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;" placeholder="Nhập tên khách hàng" />
+            <br />
+            <label style="font-weight:bold">Tên tài khoản :</label><br />
+            <input type="text" name="theloai" style="outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;" placeholder="Nhập tên tài khoản" />
+            @*<select style="outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;" name="theloai" id="tacgia">
+
+                <option value="Khong co" selected>--none--</option>*@
+                @*@{var list1 = Session["CBCD"] as List<WebApplication5.Models.ChuDe>;
+            foreach (var item in list1)
+            {
+                <option value="@item.MaChuDe">@item.TenChuDe</option>
+            } }*@
+
+            @*</select>*@<br />
+            <label style="font-weight:bold">Loại tài khoản :</label><br />
+            <select style="outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;" name="tacgia" id="tacgia">
+
+                <option value="Khong co" selected>--none--</option>
+                <option value="Admin" >Admin</option>
+                <option value="Khách Hàng" >Khách Hàng</option>
+                @*@{var list2 = Session["CBTG"] as List<WebApplication5.Models.TacGia>;
+                    foreach (var item in list2)
+                    {
+                        <option value="@item.MaTacGia">@item.TenTacGia</option>
+                    } }*@
+
+            </select><br />
+           
+            <input type="submit" value="Tìm kiếm" style="padding: 5px;
+width:150px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background:  #0000ff;" />
+        </form>
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    @*<form style="width:650px;height:280px;margin-left:73px;margin-top:10px;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);" method="post" action="~/KhachHang/Update">
+        <div  style="padding-left:10px;padding-top:10px; width:330px;height:280px;float:left;margin:0">
+            <label style="font-weight:bold">Tên khách hàng :</label><br />
+            @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @style = "outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;", @Value = @kh.HoTen, @id = "name", @placeholder = "Nhập tên khách hàng" } })
+            <br />
+            <p style="color:red">@Html.ValidationMessageFor(model => model.HoTen)</p>
+            <label style="font-weight:bold">Ngày sinh :</label><br />
+            @Html.EditorFor(model => model.NgaySinh, new { htmlAttributes = new { @type = "date", @style = "outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;", @Value = dateValue, @id = "day", @placeholder = "Nhập mô tả" } })
+            <p style="color:red">@Html.ValidationMessageFor(model => model.NgaySinh)</p>
+            @*<input type="text" style="outline:none; margin-top:5px;margin-bottom:5px;width:50px;border-radius: 10px;padding:5px;" name="day" id="date"
+                       placeholder="Nhập ngày sinh"
+                       value=@kh.NgaySinh.Day />
+                <input type="text" style="outline:none; margin-top:5px;margin-bottom:5px;width:50px;border-radius: 10px;padding:5px;" name="month" id="date"
+                       placeholder="Nhập tháng sinh"
+                       value=@kh.NgaySinh.Month />
+                <input type="text" style="outline:none; margin-top:5px;margin-bottom:5px;width:50px;border-radius: 10px;padding:5px;" name="year" id="date"
+                       placeholder="Nhập năm sinh"
+                       value=@kh.NgaySinh.Year /><br />*@
+            @*<label style="font-weight:bold">Tài khoản :</label><br />
+            @Html.EditorFor(model => model.TaiKhoan, new { htmlAttributes = new { @style = "outline:none; margin-top:5px;margin-bottom:5px; border-radius: 10px;padding:5px;", @readonly = "readonly", @Value = @kh.TaiKhoan, @id = "name", @placeholder = "Nhập tài khoản" } })
+            <br />
+
+        </div>
+        <div style="width:310px;height:280px;float:right;margin:0;padding-top:10px;">
+            @if (@kh.GioiTinh == "Nam")
+            {
+                <label style="font-weight:bold">Giới tính :</label><br />
+                        @Html.RadioButtonFor(model => model.GioiTinh, "Nam", new { @checked = "checked", @style = "margin-top:5px;margin-bottom:5px" })
+                        <span id="male">
+                            &nbsp; Nam
+                        </span>@:&nbsp; &nbsp;
+                        @Html.RadioButtonFor(model => model.GioiTinh, "Nữ")
+                        <span id="female">
+                            &nbsp; Nữ
+                        </span>@:&nbsp; &nbsp;<br />
+       }
+            else
+            {
+                <label style="font-weight:bold" l>Giới tính :</label><br />
+                        @Html.RadioButtonFor(model => model.GioiTinh, "Nam")
+                        <span id="male">
+                            &nbsp; Nam
+                        </span>@:&nbsp; &nbsp;
+                        @Html.RadioButtonFor(model => model.GioiTinh, "Nữ", new { @checked = "checked", @style = "margin-top:5px;margin-bottom:5px" })
+                        <span id="female">
+                            &nbsp; Nữ
+                        </span>@:&nbsp; &nbsp;<br />
+       }
+
+
+
+            @if (@kh.LoaiKH == "Admin")
+            {
+                <label style="font-weight:bold">Loại khách hàng :</label><br />
+                        @Html.RadioButtonFor(model => model.LoaiKH, "Admin", new { @checked = "checked", @style = "margin-top:5px;margin-bottom:5px" })
+                        <span id="male">
+                            &nbsp; Admin
+                        </span>@:&nbsp; &nbsp;
+                        @Html.RadioButtonFor(model => model.LoaiKH, "Khách Hàng")
+                        <span id="female">
+                            &nbsp; Khách Hàng
+                        </span>@:&nbsp; &nbsp;<br />
+       }
+            else
+            {
+                <label style="font-weight:bold">Loại khách hàng :</label><br />
+                        @Html.RadioButtonFor(model => model.LoaiKH, "Admin")
+                        <span id="male">
+                            &nbsp; Admin
+                        </span>@:&nbsp; &nbsp;
+                        @Html.RadioButtonFor(model => model.LoaiKH, "Khách Hàng", new { @checked = "checked", @style = "margin-top:5px;margin-bottom:5px" })
+                        <span id="female">
+                            &nbsp; Khách Hàng
+                        </span>@:&nbsp; &nbsp;<br />
+       }
+
+            <input type="submit" value="Sửa"
+                   style="padding: 5px;
+width:150px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+            <input type="button"
+                   value="Reset mật khẩu"
+                   onclick="location.href='@Url.Action("Reset", "KhachHang")'"
+                   style="padding: 5px;
+width:150px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+        </div>
+    </form>*@
+
+
+
+    <br /><br />
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Tên khách hàng</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+                <th>Loại khách hàng</th>
+                <th>Tài khoản</th>
+                <th>Thao tác</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var list = Session["ListKH"] as List<WebApplication5.Models.KhachHang>;
+                foreach (var item in list)
+                {
+                    <tr>
+                        <td>@item.HoTen</td>
+                        <td>@item.NgaySinh</td>
+                        <td>@item.GioiTinh</td>
+                        <td>@item.LoaiKH</td>
+                        <td>@item.TaiKhoan</td>
+                        <td>
+                            <a href="~/KhachHang/Update/@item.MaKH">Xem</a>
+                            <a href="~/KhachHang/Xoa/@item.MaKH">Xóa</a>
+                        </td>
+
+                    </tr>
+                }
+            }
+
+
+        </tbody>
+    </table>@*}*@
+
+    @*<script src="~/scripts/jquery-1.8.0.min.js"></script>*@
+
+    <script src="~/scripts/jquery.validate.min.js"></script>
+
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
+
+
+

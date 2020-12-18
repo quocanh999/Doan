@@ -1,0 +1,228 @@
+﻿
+@{
+    var db = new BookContext();
+    ViewBag.Title = "CTLichSu";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <link href="~/Content/chude.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .container {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            font-family: sans-serif;
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+        }
+
+        .theLoais {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .theloai {
+            position: relative;
+            width: 360px;
+            height: 202px;
+            box-shadow: 0 9px 15px -4px rgba(0, 0, 0, 0.1), 0 0 0 0 white, 10px 0 15px -4px rgba(0, 0, 0, 0.1), 0 0 0 0 white;
+        }
+
+            .theloai img {
+                max-width: 140px;
+                max-height: 202px;
+                display: inline-block;
+                margin-top: 6px;
+            }
+
+        .theLoais .info {
+            word-wrap: break-word;
+            text-decoration: none;
+            width: 200px;
+            float: right;
+        }
+
+        .info {
+            padding: 10px;
+        }
+
+            .info a {
+                text-decoration: none;
+                color: black;
+            }
+
+                .info a:hover {
+                    color: rgb(24, 160, 103);
+                }
+
+            .info .btn-addCart {
+                position: absolute;
+                right: 1%;
+                bottom: 2%;
+                background: green;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 5px;
+                width: 120px;
+                text-align: center;
+            }
+
+                .info .btn-addCart:hover {
+                    background: rgb(26, 173, 26);
+                }
+
+                .info .btn-addCart a {
+                    color: white;
+                    display: block;
+                }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-left: 5px;
+            display: inline-block;
+            list-style-type: none;
+        }
+
+        table {
+            margin-top: 50px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><h1 style="font-size:1.5em; text-transform:uppercase; margin-top:10px;">Lịch sử mua hàng</h1></div>
+    
+    <div class="container">
+        @{
+
+            var hd = Session["LS"] as WebApplication5.Models.HoaDon;
+            string dateValue = hd.NgayTao.Year + "-" + hd.NgayTao.Month + "-" + hd.NgayTao.Day;
+            if (hd.NgayTao.Month < 10 && hd.NgayTao.Day >= 10)
+            {
+                dateValue = hd.NgayTao.Year + "-0" + hd.NgayTao.Month + "-" + hd.NgayTao.Day;
+
+            }
+            else if (hd.NgayTao.Day < 10 && hd.NgayTao.Month >= 10)
+            {
+                dateValue = hd.NgayTao.Year + "-" + hd.NgayTao.Month + "-0" + hd.NgayTao.Day;
+            }
+            else if (hd.NgayTao.Month < 10 && hd.NgayTao.Day < 10)
+            {
+                dateValue = hd.NgayTao.Year + "-0" + hd.NgayTao.Month + "-0" + hd.NgayTao.Day;
+            }
+          
+            <form  method="post" action="~/HoaDon/TimKiem">
+                <div style="width:500px;height:130px;margin-left:70px;">
+                    <div style="width:250px;height:150px;float:left">
+                        <label style="font-weight:bold">Mã đơn hàng :</label><br />
+                        <input type="number" readonly="readonly" value="@hd.MaDonHang" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="maDH" />
+                        <br />
+                        <label style="font-weight:bold">Ngày đặt hàng :</label><br />
+                        <input type="date" readonly="readonly" value=@dateValue style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+                        <br />
+                        <label style="font-weight:bold">Tên khách hàng :</label><br />
+                        <input type="text" readonly="readonly" value="@db.KhachHang.Find(hd.MaKH).HoTen" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+                        <br />
+                       
+                    </div>
+                    <div style="width:250px;height:150px;float:right">
+                        <label style="font-weight:bold">Địa chỉ :</label><br />
+                        <input type="text" readonly="readonly" value="@hd.DiaChi" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+                        <br />
+                        <label style="font-weight:bold">SĐT :</label><br />
+                        <input type="text" readonly="readonly" value="@hd.SDT" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+                        <br />
+                        <label style="font-weight:bold">Tổng tiền :</label><br />
+                        <input type="text" readonly="readonly" value="@hd.TongTien" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+                        <br />
+                    </div>
+                </div>
+
+              
+            </form>}
+        @*}*@
+
+
+        <br /><br />
+        <table style="margin-top: 50px; width:96.6%;margin-left:20px;margin-right:20px">
+            <thead>
+                <tr>
+                    <th>Mã sách</th>
+                    <th>Tên sách</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    
+                    var list = Session["ListCTLichSu"] as List<WebApplication5.Models.ChiTietHoaDon>;
+                    foreach (var item in list)
+                    {
+                        <tr>
+                            <td>@item.MaSach</td>
+                            <td>@db.Sach.Find(item.MaSach).TenSach</td>
+                            <td>@item.SoLuong</td>
+                            <td>@item.ThanhTien</td>
+
+
+
+                        </tr>
+                    }
+                }
+
+
+            </tbody>
+        </table>@*}*@
+
+        @*<script src="~/scripts/jquery-1.8.0.min.js"></script>*@
+
+        <script src="~/scripts/jquery.validate.min.js"></script>
+
+        <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+    </div>
+    @*<ul class="row">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+            <li class="col-lg-12" id="numPages">@Html.PagedListPager(Model, page => Url.Action("Index", "NoiBat", new { page }))</li>
+        </ul>*@
+</body>
+</html>
+

@@ -1,0 +1,131 @@
+﻿
+@using WebApplication5.ViewModel;
+@using WebApplication5.scripts;
+@using PagedList.Mvc
+@model PagedList.IPagedList<WebApplication5.Models.Sach>
+@{
+    ViewBag.Title = "KetQua";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    int id = ViewBag.MaTacGia;
+}
+<div class="container"><h1 style="font-size:1.5em; text-transform:uppercase; margin-top:10px;">Tác giả: @ViewBag.TenTacGia</h1></div>
+
+<style>
+    .container {
+        font-family: sans-serif;
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+    }
+
+    .theLoais {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .theloai {
+        position: relative;
+        width: 360px;
+        height: 202px;
+        box-shadow: 0 9px 15px -4px rgba(0, 0, 0, 0.1), 0 0 0 0 white, 10px 0 15px -4px rgba(0, 0, 0, 0.1), 0 0 0 0 white;
+    }
+
+        .theloai img {
+            max-width: 140px;
+            max-height: 190px;
+            display: inline-block;
+            margin-top: 6px;
+        }
+
+    .theLoais .info {
+        word-wrap: break-word;
+        text-decoration: none;
+        width: 200px;
+        float: right;
+    }
+
+    .info {
+        padding: 10px;
+    }
+
+        .info a {
+            text-decoration: none;
+            color: black;
+        }
+
+            .info a:hover {
+                color: rgb(24, 160, 103);
+            }
+
+        .info .btn-addCart {
+            position: absolute;
+            right: 1%;
+            bottom: 2%;
+            background: green;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 5px;
+            width: 120px;
+            text-align: center;
+        }
+
+            .info .btn-addCart:hover {
+                background: rgb(26, 173, 26);
+            }
+
+            .info .btn-addCart a {
+                color: white;
+                display: block;
+            }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin-left: 5px;
+        display: inline-block;
+        list-style-type: none;
+    }
+</style>
+<div class="container">
+    <div class="theLoais">
+        @{
+            foreach (var item in Model)
+            {
+                var img = item.AnhBia;
+                <div class="theloai">
+                    <img src="~/UploadedFiles/@img" alt="">
+                    <div class="info">
+                        <h3><a href="/ChiTietSach/Index/@item.MaSach">@StringExtension.opimizeName(item.TenSach, 27)</a></h3>
+                        <p>Tác giả: @SachMoiViewModel.GetTenTacGia(item.MaTacGia)</p>
+                        <p>Giá tiền: @item.GiaBan</p>
+                        @*@{if (Session["KhachHang"] == null)
+            {
+                <div class="btn-addCart"><a href="/DangNhap/Index">Thêm vào giỏ</a></div>
+            }
+            else
+            {
+
+            }
+        }*@
+                    </div>
+                </div>
+                            }
+        }
+
+    </div>
+</div>
+<div class="container">
+    <ul>
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    <li id="numPages">@Html.PagedListPager(Model, page => Url.Action("KetQua", "HomeTacGia", new { id, page }))</li>
+    </ul>
+</div>
+
+
+

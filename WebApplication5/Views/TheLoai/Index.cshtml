@@ -1,0 +1,61 @@
+﻿@model List<WebApplication5.Models.ChuDe>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<style>
+    .container {
+        font-family: sans-serif;
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+    }
+
+    .theLoais {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+        .theLoais a {
+            text-decoration: none;
+            color: white;
+        }
+
+            .theLoais a:hover .theloai {
+                background-color: #00b550;
+            }
+
+    .theloai {
+        text-wrap: normal;
+        background-color: #159c51;
+        height: 50px;
+        width: 150px;
+        text-align: center;
+        line-height: 50px;
+        position: relative;
+        box-shadow: 0 9px 15px -4px rgba(0, 0, 0, 0.1), 0 0 0 0 white, 10px 0 15px -4px rgba(0, 0, 0, 0.1), 0 0 0 0 white;
+    }
+</style>
+<div class="container">
+    <div class="theLoais">
+        @{
+            foreach (var item in Model)
+            {
+                <a href="/TheLoai/KetQua/?id=@item.MaChuDe&page=1">
+                    <div class="theloai">
+                        @item.TenChuDe
+                    </div>
+                </a>
+
+            }
+        }
+    </div>
+</div>
+
+

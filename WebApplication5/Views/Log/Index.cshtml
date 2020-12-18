@@ -1,0 +1,128 @@
+﻿@model WebApplication5.Models.Log
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAd.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <link href="~/Content/chude.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <style>
+        table {
+            margin-left: 5px;
+            margin-right: 5px;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+<body>
+
+    @*@using (Html.BeginForm("Add","ChuDe",FormMethod.Post))
+        {*@
+    @*@{*@
+
+    <h1 style="font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-decoration: underline;
+    text-align: center">
+        Nhật Ký Hoạt Động
+    </h1>
+
+    <form style="width:300px;height:100px;margin-left:73px;margin-top:10px" method="post" action="~/Log/TimKiem">
+        <label style="font-weight:bold">Ngày hoạt động :</label><br />
+        <input type="date" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngayTimKiem" />
+        @*@Html.EditorFor(model => model.ThoiGian, new { htmlAttributes = new {@type="date", @style = "outline:none; margin-top:5px; border-radius: 10px;padding:5px;", @id = "name", @placeholder = "Nhập tên thể loại" } })*@
+        <br />
+        <input type="submit" value="Tìm kiếm"
+               style="padding: 5px;
+width:100px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+    </form>
+    @*}*@
+
+
+    <br /><br />
+    <table style="width:99.5%">
+        <thead>
+            <tr>
+                <th>Thời gian</th>
+                <th>Tài khoản</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var list = Session["ListLog"] as List<WebApplication5.Models.Log>;
+                if (list != null)
+                {
+                    foreach (var item in list)
+                    {
+                    <tr>
+                        <td>@item.ThoiGian</td>
+                        <td>@item.TaiKhoan</td>
+                        <td>@item.HanhDong</td>
+
+
+                    </tr>
+                        }
+                    }
+                }
+
+
+        </tbody>
+    </table>@*}*@
+
+    @*<script src="~/scripts/jquery-1.8.0.min.js"></script>*@
+
+    <script src="~/scripts/jquery.validate.min.js"></script>
+
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

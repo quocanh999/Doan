@@ -1,0 +1,104 @@
+﻿@model WebApplication5.Models.ThongKeHD
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAd.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <link href="~/Content/chude.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    @*@using (Html.BeginForm("Add","ChuDe",FormMethod.Post))
+        {*@
+    @*@{*@
+
+    <h1 style="font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-decoration: underline;
+    text-align: center">
+        Thống Kê
+    </h1>
+    <form style="width:300px;height:200px;margin-left:73px;margin-top:10px" method="post" action="~/ThongKe/Xem">
+        <label style="font-weight:bold">Năm :</label><br />
+        @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @style = "outline:none; margin-top:5px; border-radius: 10px;padding:5px;", @id = "name", @placeholder = "Nhập năm" } })
+        <br />
+        <br />
+        <label style="font-weight:bold">Tổng tiền: @ViewBag.tong VNĐ</label>
+        <br />
+        <p style="color:red"></p>
+        <input type="submit" value="Xem thống kê"
+               style="padding: 5px;
+width:150px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+    </form>
+    @*}*@
+
+
+    <br /><br />
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Tháng</th>
+                <th>Năm</th>
+                <th>Số lượng HĐ</th>
+                <th>Tổng tiền</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var list = Session["ThongKe"] as List<WebApplication5.Models.ThongKeHD>;
+                if (list != null)
+                {
+                    foreach (var item in list)
+                    {
+                    <tr>
+                        <td>@item.Month</td>
+                        <td>@item.Year</td>
+                        <td>@item.SoLuongBill</td>
+                        <td>@item.TongTien</td>
+                    </tr>
+                        }
+                    }
+                }
+
+
+        </tbody>
+    </table>@*}*@
+
+    @*<script src="~/scripts/jquery-1.8.0.min.js"></script>*@
+
+    <script src="~/scripts/jquery.validate.min.js"></script>
+
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
+
+
+
+
+

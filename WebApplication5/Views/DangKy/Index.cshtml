@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@if (ViewBag.Err != null)
+{
+    <script type="text/javascript" charset="utf-8">
+        window.onload = function () {
+        alert("@ViewBag.Err");
+    }
+    </script>
+}
+@*<div class="breadcrumb">
+    <div class="container">
+        <a class="breadcrumb-item" href="~/Home/Index">Trang chủ</a>
+        <span class="breadcrumb-item active">Đăng ký</span>
+    </div>*@
+</div>
+<section class="static about-sec">
+    <div class="container">
+        <h1>Tài khoản của tôi / Đăng ký</h1>
+        <p>Đăng kí tài khoản để có thể nhận nhiều ưu đãi từ BOOKSTORE</p>
+        <div class="form">
+            <form method="post" action="~/DangKy/Index">
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" name="name" placeholder="Chúng tôi nên gọi bạn là gì? (7 ký tự)" required>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="date" name="dob" placeholder="Ngày sinh" required>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-md-4">
+                        <select style="width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        margin-bottom: 35px;" name="gender">
+                            <option value="Nam" selected>Nam</option>
+                            <option value="Nu" selected>Nữ</option>
+                        </select>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" name="address" placeholder="Địa chỉ" required>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-md-4">
+                        <input name="username" placeholder="Tên tài khoản" required>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="password" name="pass" placeholder="Mật khẩu" required>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="password" name="repass" placeholder="Nhập lại mật khẩu" required>
+                        <span class="required-star">*</span>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <button type="submit" class="btn black">Đăng ký</button>
+                        <h5>Bạn có sẳn sàn tạo một tài khoản <a href="~/DangNhap/Index">Đăng nhập</a></h5>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+

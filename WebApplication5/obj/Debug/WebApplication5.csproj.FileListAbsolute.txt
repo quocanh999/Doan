@@ -1,0 +1,442 @@
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\ApplicationInsights.config
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\csc.exe
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\vbc.exe
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\WebApplication5.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\EntityFramework.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Helpers.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Mvc.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Razor.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Webpages.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\EntityFramework.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Razor.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Webpages.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Helpers.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\bin\System.Web.Mvc.xml
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojResolveAssemblyReference.cache
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+C:\Users\dell5117\Documents\Visual Studio 2015\Projects\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+C:\Users\dell5117\documents\visual studio 2015\Projects\WebApplication5\WebApplication5\bin\PagedList.dll
+C:\Users\dell5117\documents\visual studio 2015\Projects\WebApplication5\WebApplication5\bin\PagedList.Mvc.dll
+C:\Users\dell5117\documents\visual studio 2015\Projects\WebApplication5\WebApplication5\bin\PagedList.xml
+C:\Users\dell5117\documents\visual studio 2015\Projects\WebApplication5\WebApplication5\bin\PagedList.Mvc.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\ApplicationInsights.config
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\csc.exe
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\vbc.exe
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\WebApplication5.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\EntityFramework.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\PagedList.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\PagedList.Mvc.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Helpers.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Mvc.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Razor.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Webpages.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\EntityFramework.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\PagedList.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\PagedList.Mvc.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Razor.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Webpages.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Helpers.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\bin\System.Web.Mvc.xml
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojResolveAssemblyReference.cache
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+C:\Users\dell5117\Desktop\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\ApplicationInsights.config
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\csc.exe
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\vbc.exe
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.Mvc.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Helpers.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Mvc.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Razor.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.Mvc.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Razor.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Helpers.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Mvc.xml
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojAssemblyReference.cache
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CopyComplete
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+D:\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\ApplicationInsights.config
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\csc.exe
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\vbc.exe
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.Mvc.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Helpers.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Mvc.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Razor.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.dll
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.Mvc.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Razor.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Helpers.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Mvc.xml
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojAssemblyReference.cache
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CoreCompileInputs.cache
+C:\New folder\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CopyComplete
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\ApplicationInsights.config
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\csc.exe
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\vbc.exe
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.Mvc.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Helpers.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Mvc.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Razor.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\PagedList.Mvc.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Razor.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Helpers.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\bin\System.Web.Mvc.xml
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojAssemblyReference.cache
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CoreCompileInputs.cache
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CopyComplete
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+C:\TryHard\Lương 1k\Do_an_2\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+D:\WebNangCao\WebApplication5\WebApplication5\bin\ApplicationInsights.config
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\csc.exe
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\vbc.exe
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe
+D:\WebNangCao\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+D:\WebNangCao\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+D:\WebNangCao\WebApplication5\WebApplication5\bin\WebApplication5.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+D:\WebNangCao\WebApplication5\WebApplication5\bin\EntityFramework.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\PagedList.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\PagedList.Mvc.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Helpers.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Mvc.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Razor.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Webpages.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.dll
+D:\WebNangCao\WebApplication5\WebApplication5\bin\EntityFramework.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\PagedList.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\PagedList.Mvc.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Razor.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Webpages.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Helpers.xml
+D:\WebNangCao\WebApplication5\WebApplication5\bin\System.Web.Mvc.xml
+D:\WebNangCao\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CoreCompileInputs.cache
+D:\WebNangCao\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CopyComplete
+D:\WebNangCao\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+D:\WebNangCao\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\ApplicationInsights.config
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\csc.exe
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\vbc.exe
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\WebApplication5.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\EntityFramework.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\PagedList.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\PagedList.Mvc.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Helpers.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Mvc.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Razor.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Webpages.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\EntityFramework.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\PagedList.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\PagedList.Mvc.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Razor.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Webpages.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Helpers.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\bin\System.Web.Mvc.xml
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojAssemblyReference.cache
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CoreCompileInputs.cache
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CopyComplete
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+D:\Tyler ĐỖ\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+F:\Download\WebApplication5\WebApplication5\bin\ApplicationInsights.config
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\csc.exe
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\System.Collections.Immutable.dll
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\System.Reflection.Metadata.dll
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\vbc.exe
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe
+F:\Download\WebApplication5\WebApplication5\bin\roslyn\VBCSCompiler.exe.config
+F:\Download\WebApplication5\WebApplication5\bin\WebApplication5.dll.config
+F:\Download\WebApplication5\WebApplication5\bin\WebApplication5.dll
+F:\Download\WebApplication5\WebApplication5\bin\WebApplication5.pdb
+F:\Download\WebApplication5\WebApplication5\bin\EntityFramework.dll
+F:\Download\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.Web.Infrastructure.dll
+F:\Download\WebApplication5\WebApplication5\bin\PagedList.dll
+F:\Download\WebApplication5\WebApplication5\bin\PagedList.Mvc.dll
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Helpers.dll
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Mvc.dll
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Razor.dll
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.dll
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Webpages.dll
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.dll
+F:\Download\WebApplication5\WebApplication5\bin\EntityFramework.xml
+F:\Download\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollector.xml
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.ApplicationInsights.xml
+F:\Download\WebApplication5\WebApplication5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Download\WebApplication5\WebApplication5\bin\PagedList.xml
+F:\Download\WebApplication5\WebApplication5\bin\PagedList.Mvc.xml
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Razor.xml
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Webpages.xml
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Webpages.Deployment.xml
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Webpages.Razor.xml
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Helpers.xml
+F:\Download\WebApplication5\WebApplication5\bin\System.Web.Mvc.xml
+F:\Download\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojAssemblyReference.cache
+F:\Download\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CoreCompileInputs.cache
+F:\Download\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CopyComplete
+F:\Download\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
+F:\Download\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb

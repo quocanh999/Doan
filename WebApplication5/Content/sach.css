@@ -1,0 +1,28 @@
+﻿
+#img-book
+{
+width: 80px;
+height: 100px;
+display: block; margin-left: auto; margin-right: auto;
+}
+#example
+{
+    margin-left:0 10px 0 10px;
+    height:auto;
+    table-layout:fixed;
+}
+#mota
+{
+    display:block;
+    height: 100px;
+  overflow-y:auto;
+}
+#img-update
+{
+    width: 80px;
+height: 100px;
+display: block; margin-left: auto; margin-right: auto;
+}
+#example_wrapper{
+    margin-top: -80px;
+}

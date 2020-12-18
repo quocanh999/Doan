@@ -1,0 +1,229 @@
+﻿.headest-header {
+    background: #F3F3F3;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.signInOut {
+    color: black;
+    float: right;
+    margin-right: 1%;
+}
+
+    .signInOut a {
+        color: black;
+        font-size: 1em;
+        font-weight: lighter;
+        text-decoration: none;
+    }
+
+.headest-header .signInOut a:hover {
+    color: #057A45;
+}
+
+.header {
+    width: 900px;
+    height: 50px;
+    background: white;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+    .header .logo {
+        width: 250px;
+        height: 100%;
+        float: left;
+        justify-content: center;
+        text-align: center;
+        line-height: 50px;
+        position: relative;
+    }
+
+        .header .logo:hover {
+            cursor: pointer;
+        }
+
+        .header .logo img {
+            width: 250px;
+            height: 35px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+    .header .search-pannel {
+        float: left;
+        border-radius: 15px;
+        border: 1px solid #D0D0D0;
+        margin-top: 15px;
+        margin-left: 15px;
+        height: 30px;
+        width: 550px;
+        position: relative;
+    }
+
+        .header .search-pannel #search-icon {
+            width: 14px;
+            height: 14px;
+            margin-left: 20px;
+        }
+
+        .header .search-pannel input[type=text] {
+            cursor: text;
+            border: none;
+            width: 80%;
+            outline: none;
+            display: inline-block;
+            margin: 8px 10px;
+        }
+
+        .header .search-pannel .search-btn {
+            float: right;
+            border-radius: 15px;
+            color: white;
+            background: #087B39;
+            text-align: center;
+            height: 100%;
+            width: 50px;
+            margin:0;
+            line-height: 30px;
+            font-weight: bolder;
+        }
+            .header .search-pannel .search-btn a{
+                text-decoration:none;
+                color:white;
+            }
+            .header .search-pannel .search-btn:hover {
+                background: #16bf5e;
+                cursor: pointer;
+            }
+
+    .header .cart {
+        float: right;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+
+        .header .cart img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .header .cart .count {
+            position: absolute;
+            min-width: 30px;
+            width: auto;
+            height: 30px;
+            background: orange;
+            text-align: center;
+            color: white;
+            border-radius: 15px;
+            line-height: 30px;
+            font-weight: bold;
+            font-size: 0.8em;
+            top: 0;
+            left: 0;
+            opacity: 0.8;
+        }
+
+        .header .cart:hover {
+            cursor: pointer;
+        }
+
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position:relative;
+}
+
+    .nav-menu ul {
+        list-style-type: none;
+        text-align: center;
+        background: #087B39;
+    }
+
+        .nav-menu ul li {
+            color: white;
+            display: inline-block;
+            height: 40px;
+            width: 150px;
+            line-height: 40px;
+            position: relative;
+            font-weight: bold;
+        }
+
+            .nav-menu ul li a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                transition: all .1s ease-in-out;
+            }
+
+                .nav-menu ul li a:hover {
+                    background: #f1f1f1;
+                    color: #333;
+                }
+
+            .nav-menu ul li > .sub-menu {
+                display: none;
+                position: absolute;
+            }
+
+            .nav-menu ul li:hover .sub-menu {
+                display: block;
+            }
+
+
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position:relative;
+}
+
+    .nav-menu ul {
+        list-style-type: none;
+        text-align: center;
+        background: #087B39;
+    }
+
+        .nav-menu ul li {
+            color: white;
+            display: inline-block;
+            height: 40px;
+            width: 150px;
+            line-height: 40px;
+            position: relative;
+            font-weight: bold;
+        }
+
+            .nav-menu ul li a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                transition: all .1s ease-in-out;
+            }
+
+                .nav-menu ul li a:hover {
+                    background: #f1f1f1;
+                    color: #333;
+                }
+
+            .nav-menu ul li > .sub-menu {
+                display: none;
+                position: absolute;
+            }
+
+            .nav-menu ul li:hover .sub-menu {
+                display: block;
+            }

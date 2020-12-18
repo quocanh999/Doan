@@ -1,0 +1,140 @@
+﻿@model WebApplication5.Models.ChuDe
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_LayoutAd.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <link href="~/Content/chude.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @{
+        var cd = Session["ChuDe"] as WebApplication5.Models.ChuDe;
+    }
+
+    <h1 style="font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-decoration: underline;
+    text-align: center">
+        Thể Loại
+    </h1>
+
+    <div style="width:600px;height:100px;">
+        <div style="margin-left: 68px;width: 233px;height: 110px;float:left">
+            <form method="post" action="~/ChuDe/Update">
+                <label style="font-weight:bold">Tên chủ đề :</label><br />
+                @Html.EditorFor(model => model.TenChuDe, new { htmlAttributes = new {@Value=cd.TenChuDe, @style = "outline:none; margin-top:5px; border-radius: 10px;padding:5px;", @name = "namecd", @id = "name", @placeholder = "Nhập tên chủ đề" } })
+                <br />
+                <p style="color:red">@Html.ValidationMessageFor(model => model.TenChuDe)</p>
+
+                <input type="submit" value="Cập nhật"
+                       style="padding: 5px;
+width:100px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+
+            </form>
+        </div>
+        <div style="float:right;width:230px;height:110px;">
+            <form method="post" action="~/ChuDe/TimKiem">
+                <label style="font-weight:bold">Tên chủ đề :</label><br />
+                <input type="text" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="name" id="name" placeholder="Nhập tên chủ đề" />
+                @*@Html.EditorFor(model => model.TenChuDe, new { htmlAttributes = new { @style = "outline:none; margin-top:5px; border-radius: 10px;padding:5px;", @name = "namecd", @id = "name", @placeholder = "Nhập tên chủ đề" } })
+                    <br />
+                    <p style="color:red">@Html.ValidationMessageFor(model => model.TenChuDe)</p>*@
+
+                <input type="submit" value="Tìm kiếm"
+                       style="padding: 5px;
+width:100px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #0000ff;" />
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    @*<form style="width:300px;height:100px;margin-left:73px;margin-top:10px" method="post" action="~/ChuDe/Update">
+        <label style="font-weight:bold">Tên chủ đề :</label><br />
+        @Html.EditorFor(model => model.TenChuDe, new { htmlAttributes = new { @Value = cd.TenChuDe, @style = "outline:none; margin-top:5px; border-radius: 10px;padding:5px;", @id = "name", @placeholder = "Nhập tên chủ đề" } })
+        <br />
+        <p style="color:red">@Html.ValidationMessageFor(model => model.TenChuDe)</p>
+        <input type="submit" value="Sửa"
+               style="padding: 5px;
+width:100px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+    </form>@*}*@
+
+
+    <br /><br />
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Tên chủ đề</th>
+                <th>Thao tác</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var list = Session["ListCD"] as List<WebApplication5.Models.ChuDe>;
+                foreach (var item in list)
+                {
+                    <tr>
+                        <td>@item.TenChuDe</td>
+                        <td>
+                            <a href="~/ChuDe/Update/@item.MaChuDe">Xem</a>
+                            <a href="~/ChuDe/Xoa/@item.MaChuDe">Xóa</a>
+                        </td>
+
+                    </tr>
+                }
+            }
+
+
+        </tbody>
+    </table>@*}*@
+
+
+    <script src="~/scripts/jquery.validate.min.js"></script>
+
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
+
+
+

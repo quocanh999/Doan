@@ -1,0 +1,120 @@
+﻿@using WebApplication5.ViewModel
+@{ 
+    Layout = "~/Views/Shared/_LayoutAd.cshtml";
+}
+<script src="~/scripts/bootstrap.min.js"></script>
+<script src="~/scripts/Chart.min.js"></script>
+<script src="~/scripts/jquery-3.4.0.min.js"></script>
+<style>
+    .container {
+        font-family: sans-serif;
+        width: 90%;
+        height: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 25px;
+        justify-content: space-around;
+        padding: 20px;
+        margin:10px auto;
+    }
+
+    .chart {
+        width: 400px;
+        height: 200px;
+        border: 1px solid #ddd;
+        padding: 1px;
+        border-radius: 4px;
+    }
+</style>
+<div class="container">
+    <div class="chart">
+        <canvas id="bar_chart_sach"></canvas>
+    </div>
+    <div class="chart">
+        <canvas id="bar_chart_tongtien"></canvas>
+    </div>
+    <div class="chart">
+        <canvas id="bar_chart_sachbanchay"></canvas>
+    </div>
+    <div class="chart">
+        <canvas id="bar_chart_tacgia"></canvas>
+    </div>
+</div>
+<script>
+    //sach
+        var month= @Html.Raw(Json.Encode(ChartViewModel.Months));
+        var saches = @Html.Raw(Json.Encode(ChartViewModel.GetSaches()));
+        var ctx = $("#bar_chart_sach");
+        var bacChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: month,
+                datasets: [{
+                    label: "Số lượng sách nhập về",
+                    data: saches
+                }]
+            },
+            option: {
+                maintainAspectRatio: false,
+                scales: { xAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false }
+        }
+    })
+
+    //tongtien
+    var ctx2 = $("#bar_chart_tongtien");
+    var tongTien= @Html.Raw(Json.Encode(ChartViewModel.GetDoanhThu()));
+        var bacChart = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: month,
+                datasets: [{
+                    label: "Tổng tiền",
+                    data: tongTien
+                }]
+            },
+            option: {
+                maintainAspectRatio: false,
+                scales: { xAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false }
+            }})
+
+    //sachbanchay
+        var sachBanChay= @Html.Raw(Json.Encode(ChartViewModel.Saches()));
+        var soluong= @Html.Raw(Json.Encode(ChartViewModel.SoLuong()));
+        var ctx3 = $("#bar_chart_sachbanchay");
+        var bacChart = new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: sachBanChay,
+                datasets: [{
+                    label: "Sách bán chạy",
+                    data: soluong
+                }]
+            },
+            option: {
+                maintainAspectRatio: false,
+                scales: { xAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false }
+            }})
+
+    //TacGia
+        var tacgias= @Html.Raw(Json.Encode(ChartViewModel.TenTacGias()));
+        var soluongsach_tacgia= @Html.Raw(Json.Encode(ChartViewModel.SoLuongSach_tacGia()));
+        var ctx4 = $("#bar_chart_tacgia");
+        var bacChart = new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: tacgias,
+                datasets: [{
+                    label: "Tác giả được yêu thích",
+                    data: soluongsach_tacgia
+                }]
+            },
+            option: {
+                maintainAspectRatio: false,
+                scales: { xAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false }
+            }})
+</script>

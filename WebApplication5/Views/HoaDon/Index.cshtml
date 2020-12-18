@@ -1,0 +1,166 @@
+﻿
+@model WebApplication5.Models.ChuDe
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAd.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <link href="~/Content/chude.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        table {
+            margin-top:50px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    @*@using (Html.BeginForm("Add","ChuDe",FormMethod.Post))
+        {*@
+    @*@{*@
+
+    <h1 style="font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-decoration: underline;
+    text-align: center">
+        Hóa Đơn
+    </h1>
+    <form style="width:300px;height:100px;margin-left:73px;margin-top:10px" method="post" action="~/HoaDon/TimKiem">
+
+        <label style="font-weight:bold">Ngày bắt đầu :</label><br />
+        <input type="date" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="NgayBatDau" /><br />
+        <label style="font-weight:bold">Ngày Kết thúc :</label><br />
+        <input required type="date" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="NgayKetThuc" />
+        <input type="submit" value="Tìm kiếm"
+               style="padding: 5px;
+width:100px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" />
+        <button  onclick="location.href='@Url.Action("Xuat","HoaDon")'"
+               style="padding: 2px;
+width:100px;
+margin-top:5px;
+    height: 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    color: #fff;
+    font-size: 18px;
+                    background: #fb2525;" >Xuất Excel</button>
+    </form>
+    @*}*@
+
+
+    <br /><br />
+    <table style="width:99.5%">
+        <thead>
+            <tr>
+                <th>Mã HĐ</th>
+                <th>Tên khách hàng</th>
+                <th>Địa chỉ</th>
+                <th>SĐT</th>
+                <th>Ngày đặt hàng</th>
+                <th>Tổng tiền</th>
+                <th>Thao tác</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                BookContext db = new BookContext();
+                var list = Session["ListHD"] as List<WebApplication5.Models.HoaDon>;
+
+                foreach (var item in list)
+                {
+                    if (item.DaGiaoHang == true)
+                    {
+                        <tr>
+                            <td>@item.MaDonHang</td>
+                            <td>@db.KhachHang.Find(item.MaKH).HoTen</td>
+                            <td>@item.DiaChi</td>
+                            <td>@item.SDT</td>
+                            <td>@item.NgayTao</td>
+                            <td>@item.TongTien</td>
+                            <td>
+                                <a href="~/HoaDon/Xem/@item.MaDonHang">Xem</a>
+                                <a href="~/HoaDon/GiaoHang/@item.MaDonHang">Đã giao hàng</a>
+
+
+                            </td>
+
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td>@item.MaDonHang</td>
+                            <td>@db.KhachHang.Find(item.MaKH).HoTen</td>
+                            <td>@item.DiaChi</td>
+                            <td>@item.SDT</td>
+                            <td>@item.NgayTao</td>
+                            <td>@item.TongTien</td>
+                            <td>
+                                <a href="~/HoaDon/Xem/@item.MaDonHang">Xem</a>
+                                <a href="~/HoaDon/GiaoHang/@item.MaDonHang">Giao hàng</a>
+
+
+                            </td>
+
+                        </tr>
+                    }
+                    
+                }
+            }
+
+
+        </tbody>
+    </table>@*}*@
+
+    @*<script src="~/scripts/jquery-1.8.0.min.js"></script>*@
+
+    <script src="~/scripts/jquery.validate.min.js"></script>
+
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

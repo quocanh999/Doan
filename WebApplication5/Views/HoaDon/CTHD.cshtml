@@ -1,0 +1,147 @@
+﻿
+@model WebApplication5.Models.ChuDe
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAd.cshtml";
+    BookContext db = new BookContext();
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <link href="~/Content/chude.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+   
+    <style>
+        table {
+            margin-top: 250px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    @*@using (Html.BeginForm("Add","ChuDe",FormMethod.Post))
+        {*@
+    @*@{*@
+
+    <h1 style="font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-decoration: underline;
+    text-align: center">
+        Chi Tiết Hóa Đơn
+    </h1>
+    @{
+
+        var hd = Session["HD"] as WebApplication5.Models.HoaDon;
+        string dateValue = hd.NgayTao.Year + "-" + hd.NgayTao.Month + "-" + hd.NgayTao.Day;
+        if (hd.NgayTao.Month < 10 && hd.NgayTao.Day >= 10)
+        {
+            dateValue = hd.NgayTao.Year + "-0" + hd.NgayTao.Month + "-" + hd.NgayTao.Day;
+
+        }
+        else if (hd.NgayTao.Day < 10 && hd.NgayTao.Month >= 10)
+        {
+            dateValue = hd.NgayTao.Year + "-" + hd.NgayTao.Month + "-0" + hd.NgayTao.Day;
+        }
+        else if (hd.NgayTao.Month < 10 && hd.NgayTao.Day < 10)
+        {
+            dateValue = hd.NgayTao.Year + "-0" + hd.NgayTao.Month + "-0" + hd.NgayTao.Day;
+        }
+    <form style="width:300px;height:100px;margin-left:73px;margin-top:10px" method="post" action="~/HoaDon/TimKiem">
+        <label style="font-weight:bold">Mã đơn hàng :</label><br />
+        <input type="number" readonly="readonly" value="@hd.MaDonHang" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="maDH" />
+        <br />
+        <label style="font-weight:bold">Ngày đặt hàng :</label><br />
+        <input type="date" readonly="readonly" value=@dateValue style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+        <br />
+        <label style="font-weight:bold">Tên khách hàng :</label><br />
+        <input type="text" readonly="readonly" value="@db.KhachHang.Find(hd.MaKH).HoTen" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+        <br />
+        <label style="font-weight:bold">Địa chỉ :</label><br />
+        <input type="text" readonly="readonly" value="@hd.DiaChi" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+        <br />
+        <label style="font-weight:bold">SĐT :</label><br />
+        <input type="text" readonly="readonly" value="@hd.SDT" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+        <br />
+        <label style="font-weight:bold">Tổng tiền :</label><br />
+        <input type="text" readonly="readonly" value="@hd.TongTien" style="outline:none; margin-top:5px; border-radius: 10px;padding:5px;" name="ngaytao" />
+        <br />
+    </form>}
+    @*}*@
+
+
+    <br /><br />
+    <table style="width:99%;">
+        <thead>
+            <tr>
+                <th>Mã sách</th>
+                <th>Tên sách</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+               
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                
+                var list = Session["ListCTHD"] as List<WebApplication5.Models.ChiTietHoaDon>;
+                foreach (var item in list)
+                {
+                    <tr>
+                        <td>@item.MaSach</td>
+                        <td>@db.Sach.Find(item.MaSach).TenSach</td>
+                        <td>@item.SoLuong</td>
+                        <td>@item.ThanhTien</td>
+
+                       
+
+                    </tr>
+                }
+            }
+
+
+        </tbody>
+    </table>@*}*@
+
+    @*<script src="~/scripts/jquery-1.8.0.min.js"></script>*@
+
+    <script src="~/scripts/jquery.validate.min.js"></script>
+
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
